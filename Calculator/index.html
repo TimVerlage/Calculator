@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="module" src="index.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Calculator</title>
+</head>
+<body>
+  <main>
+    <h1>Calculator</h1>
+    <section class="calculator">
+      <div class="row">
+        <button class="bsqrt op" title="Square root">√x</button>
+        <button class="bsq op" title="Squared">x^2</button>
+        <button class="bclear op">Clear</button>
+        <button class="badd op">+</button>
+      </div>
+      <div class="row">
+        <button class="b7 digit">7</button>
+        <button class="b8 digit">8</button>
+        <button class="b9 digit">9</button>
+        <button class="bsub op">-</button>
+      </div>
+      <div class="row">
+        <button class="b4 digit">4</button>
+        <button class="b5 digit">5</button>
+        <button class="b6 digit">6</button>
+        <button class="bmul op">*</button>
+      </div>
+      <div class="row">
+        <button class="b1 digit">1</button>
+        <button class="b2 digit">2</button>
+        <button class="b3 digit">3</button>
+        <button class="bdiv op">/</button>
+      </div>
+    </section>
+    <p>
+      <span class="label">Result:</span>
+      <code id="result">0</code>
+    </p>
+    <p>
+      <span class="label">You selected:</span>
+      <code id="input">0</code>
+    </p>
+    <section>
+      <h2>History</h2>
+      <ol class="history"></ol>
+    </section>
+  </main>
+</body>
+</html>
